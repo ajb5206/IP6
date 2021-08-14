@@ -22,11 +22,22 @@ $(document).ready(function() {
     
     promise.then(function(response) {
       const responseText = JSON.parse(response);
-      $('.showConverted').text(`The conversion rate is ${responseText.conversion_rate} and the total converted amount 
-				is ${money * responseText.conversion_rate}`);
+      $('.showConverted').text(`The conversion rate is $${responseText.conversion_rate} and the total converted amount 
+				is $${money * responseText.conversion_rate}`);
+      $('.showError').text('');
+      $('.showErrorType').text('');
     }, function(response) {
       let errorText = JSON.parse(response);
+      $('.showConverted').text('');
       $('.showError').text(`There is an ${errorText.result} due to ${errorText["error-type"]}.`);
+      if (errorText["error-type"] === "malformed-request") {
+        $('.showErrorType').text(`One or more of your currency codes was entered improperly.`);
+      } else if (errorText["error-type"] === "unsupported-code") {
+        $('.showErrorType').text(`One or more of your currency codes isnt supported.`);
+      } else if (errorText["error-type"] === "quota-reached") {
+        $('.showErrorType').text("The account has reached the the number of API requests allowed by the plan.");
+      } else
+        $('.showErrorText').text();
     });
   });
 });
