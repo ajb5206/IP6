@@ -56,7 +56,7 @@ data from the https://www.exchangerate-api.com/ API.
 9. If you'd like to run project in a development server run the following: _`npm run start`_
 10. To run Lint, use the following command: `npm run lint`
 11. To run tests with Jest, use the following: `npm test`
-12. Go to https://www.exchangerate-api.com/ and input your email address to get a free API key
+12. Go to [ExchanceRate-API](https://www.exchangerate-api.com/) and input your email address to get a free API key
 13. Create a .env file and add it to your .gitignore file.
 14. Store your API key as API_KEY in your .env file
 15. Convert Currency
