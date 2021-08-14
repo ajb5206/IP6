@@ -37,7 +37,7 @@ $(document).ready(function() {
       } else if (errorText["error-type"] === "quota-reached") {
         $('.showErrorType').text("The account has reached the the number of API requests allowed by the plan.");
       } else
-        $('.showErrorText').text();
+        $('.showErrorType').text();
     });
   });
 });
