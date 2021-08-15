@@ -21,6 +21,7 @@
 * Bootstrap
 * CSS
 * css-loader
+* dotenv
 * eslint
 * eslint-loader
 * HTML5
@@ -51,15 +52,18 @@ data from the https://www.exchangerate-api.com/ API.
 4. Navigate to the directory where you will be cloning the project to
 5. Clone the project to your current directory using the following command: git clone https://github.com/ajb5206/IP6
 6. Make sure to `cd` into the the cloned project directory. Make sure to be in the root directory of the project
-7. Run `npm install` in the terminal to install project environment and required dependencies 
-8. Run `npm run build` to create production environment
-9. If you'd like to run project in a development server run the following: _`npm run start`_
-10. To run Lint, use the following command: `npm run lint`
-11. To run tests with Jest, use the following: `npm test`
-12. Go to [ExchanceRate-API](https://www.exchangerate-api.com/) and input your email address to get a free API key
-13. Create a .env file and add it to your .gitignore file.
-14. Store your API key as API_KEY in your .env file
-15. Convert Currency
+7. Enter `git remote rm IP6` to remove the remote attached
+8. Enter `git remote add origin [your-project-url-here]`
+9. Create a `.env` file and add it to your `.gitignore` file
+10. Push your `.gitignore` file
+11. Run `npm install` in the terminal to install project environment and required dependencies 
+12. Run `npm run build` to create production environment
+13. If you'd like to run project in a development server run the following: _`npm run start`_
+14. To run Lint, use the following command: `npm run lint`
+15. To run tests with Jest, use the following: `npm test`
+16. Go to [ExchanceRate-API](https://www.exchangerate-api.com/) and input your email address to get a free API key
+17. Store your API key as API_KEY in your `.env` file
+18. Convert Currency
 
 
 ## Known Bugs <a id="knownbugs"></a>
