@@ -27,7 +27,6 @@
 * HTML5
 * package-json
 * Javascript
-* Jest
 * JQuery
 * Node.js
 * Node Package Manager
